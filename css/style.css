@@ -1,0 +1,46 @@
+.container {
+  background: #ddd;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px; }
+
+#carousel {
+  position: relative; }
+  #carousel .carousel-list {
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 500px; }
+    #carousel .carousel-list ul {
+      margin: 0;
+      padding: 0;
+      width: 2500px; }
+      #carousel .carousel-list ul::after, #carousel .carousel-list ul::before {
+        content: "";
+        display: table;
+        clear: both; }
+      #carousel .carousel-list ul li {
+        float: left;
+        list-style: none;
+        text-align: center;
+        width: 500px; }
+        #carousel .carousel-list ul li img {
+          max-width: 100%;
+          vertical-align: middle; }
+  #carousel button {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 3em;
+    line-height: 80px;
+    position: absolute;
+    top: calc(50% - 40px); }
+    #carousel button.left-btn {
+      left: 0; }
+    #carousel button.right-btn {
+      right: 0; }
+    #carousel button:hover {
+      color: #555; }
+
+/*# sourceMappingURL=style.css.map */

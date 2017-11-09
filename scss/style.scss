@@ -1,0 +1,68 @@
+body {
+    
+}
+
+.container {
+    background: #ddd;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+#carousel {
+    position: relative;
+    
+    .carousel-list {
+        height: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 500px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 2500px;
+            &::after,
+            &::before {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            li {
+                float: left;
+                list-style: none;
+                text-align: center;
+                width: 500px;
+
+                img {
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+        
+    button {
+        background: none;
+        border: none;
+        color: #999;
+        cursor: pointer;
+        font-size: 3em;
+        line-height: 80px;
+        position: absolute;
+        top: calc(50% - 40px);
+
+        &.left-btn {
+            left: 0;
+        }
+        
+        &.right-btn {
+            right: 0;
+        }
+        
+        &:hover {
+            color: #555;
+        }
+    }
+}
